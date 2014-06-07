@@ -3,6 +3,9 @@
 ;; Copyright (C) 2014 jaypei
 
 ;; Author: jaypei <jaypei97159@gmail.com>
+;; Contributers:
+;;   Jianing Yang (jianingy.yang@gmail.com)
+
 ;; URL: https://github.com/jaypei/emacs-neotree
 ;; Version: 0.1.5
 
@@ -42,9 +45,8 @@
 (defconst neo-buffer-name " *NeoTree*"
   "Name of the buffer where neotree shows directory contents.")
 
-(defconst neo-hidden-files-regexp "^\\."
-  "Hidden files regexp. By default all filest starting with dot '.',
-including . and ..")
+(defconst neo-hidden-files-regexp "^[.#]\\|\\.\\(pyc\\|pyo\\)$"
+  "Hide files matching regexp.")
 
 
 ;;
